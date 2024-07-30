@@ -1,7 +1,7 @@
 # Data-Structures-Practice
 
 ## 簡介
-基礎資料結構練習...
+基礎資料結構複習...
 
 ## 實作
 - 陣列 (Arrays)
