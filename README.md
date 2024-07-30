@@ -1,2 +1,15 @@
 # Data-Structures-Practice
-C implementation of the data structures
+
+## 簡介
+基礎資料結構練習...
+
+## 實作
+- 陣列 (Arrays)
+- 鏈結串列 (Linked Lists)
+- 堆疊 (Stacks)
+- 佇列 (Queues)
+- 圖 (Graphs)
+- 樹 (Trees)
+- 排序（Sorting）
+- 雜湊表 (Hash Tables)
+- 優先權佇列（Priority Queue）
