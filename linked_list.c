@@ -14,7 +14,6 @@ int deleteNode(LLNode **head, int data);
 int getLength(LLNode *head);
 
 int main() {
-    // 初始化頭節點為NULL
     LLNode *head = NULL;
 
     while (1) {
@@ -100,7 +99,7 @@ int addNode(LLNode **head, int data) {
     newNode->next = NULL;
 
     if (*head == NULL) {
-        // 如果head為NULL，代表新節點是第一個節點
+        // head為NULL 新節點是第一個節點
         *head = newNode;
     } else {
         // 反之 直到找到最後一個節點
