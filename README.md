@@ -13,10 +13,7 @@
 - 優先權佇列（Priority Queue）
 
 ## 其他
-Windows
-
-VSCode
-
-Cygwin
-
-gcc 11.4.0
+- Windows
+- VSCode
+- Cygwin
+- gcc 11.4.0
