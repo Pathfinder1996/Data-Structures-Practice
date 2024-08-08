@@ -19,7 +19,7 @@ int main(void) {
 
     while(1) {
         int i, num;
-        printf("\n目前堆疊內容： ");
+        printf("\n目前堆疊內容：\n");
         showStack(&s);
 
         printf("請輸入以下字母對堆疊操作：\n");
@@ -89,8 +89,8 @@ int pop(Stack *s, int *data) {
 
 void showStack(Stack *s) {
     int i;
-    for (i = 0; i <= s->top; i++) {
-        printf("%d | ", s->item[i]);
+    for (i = s->top; i >= 0; i--) {
+        printf("| %d |\n", s->item[i]);
     }
     printf("\n");
 }
