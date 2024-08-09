@@ -12,6 +12,7 @@ int push(Stack *s, int data);
 int isEmpty(Stack *s);
 int pop(Stack *s, int *data);
 void showStack(Stack *s);
+int topItem(Stack *s);
 
 int main(void) {
     Stack s;
@@ -25,7 +26,8 @@ int main(void) {
         printf("請輸入以下字母對堆疊操作：\n");
         printf("(A) 推入\n");
         printf("(B) 移除\n");
-        printf("(C) 離開\n");
+        printf("(C) 查看堆疊頂端的數字\n");
+        printf("(D) 離開\n");
 
         char choice;
         scanf(" %c", &choice);
@@ -40,6 +42,9 @@ int main(void) {
             pop(&s, &data);
         }
         else if (choice == 'C' || choice == 'c') {
+            printf("\n目前堆疊頂端：%d\n", topItem(&s));
+        }
+        else if (choice == 'D' || choice == 'd') {
             break;
         }
         else {
@@ -93,4 +98,11 @@ void showStack(Stack *s) {
         printf("| %d |\n", s->item[i]);
     }
     printf("\n");
+}
+
+int topItem(Stack *s) {
+    if (isEmpty(s)) {
+        return -1;
+    }
+    return s->item[s->top];
 }
